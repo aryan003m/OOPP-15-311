@@ -1,3 +1,7 @@
+// write a program to create a class for Point having x and y, create two method as input and show. Input method should take value of x x and y from keyboard and show will print the value of x and y. create any two objects in main and call input and show
+
+// respectively.
+
 #include <bits/stdc++.h>
 using namespace std;
 
