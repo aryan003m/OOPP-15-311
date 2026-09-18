@@ -1,3 +1,5 @@
+// write a program to create a class for Time having hh,mm and ss. Create input method that takes value as parameter and set the value to corresponding variable. Create another method called show that will print the value of hh:mm:ss. Create any two objects in main and call input and show method respectively
+
 #include <iostream>
 using namespace std;
 
