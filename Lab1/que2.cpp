@@ -1,3 +1,8 @@
+
+// Design a program to convert a procedural implementation of a student record system into an object- oriented approach using
+
+// classes and objects.
+
 #include <bits/stdc++.h>
 using namespace std;
 class Student {
