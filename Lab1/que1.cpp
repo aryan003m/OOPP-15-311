@@ -1,3 +1,6 @@
+// Write a program to store details of any two student such as name, roll, branch. Take input from user and show their details
+
+
 #include<bits/stdc++.h>
 
 using namespace std;
