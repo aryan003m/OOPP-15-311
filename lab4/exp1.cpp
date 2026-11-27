@@ -47,4 +47,15 @@ void applyDiscount(vector<Item>& cart) {
         }
     }
 }
+Item findMostExpensiveItem(const vector<Item>& cart) {
+    Item expensive = cart[0];
+
+    for (const auto& item : cart) {
+        if (item.price > expensive.price) {
+            expensive = item;
+        }
+    }
+
+    return expensive;
+}
 
