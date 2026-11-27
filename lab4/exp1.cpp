@@ -30,3 +30,13 @@ void displayCart(const vector<Item>& cart) {
 
     cout << "---------------------------------------------------------\n";
 }
+
+double calculateTotal(const vector<Item>& cart) {
+    double total = 0;
+
+    for (const auto& item : cart) {
+        total += item.quantity * item.price;
+    }
+
+    return total;
+}
