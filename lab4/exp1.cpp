@@ -59,3 +59,57 @@ Item findMostExpensiveItem(const vector<Item>& cart) {
     return expensive;
 }
 
+
+int main() {
+    vector<Item> cart;
+    int n;
+
+    cout << "Enter number of items: ";
+    cin >> n;
+
+    // Taking item details from the user
+    for (int i = 0; i < n; i++) {
+        Item item;
+
+        cout << "\nEnter item name: ";
+        cin >> ws;
+        getline(cin, item.name);
+
+        cout << "Enter quantity: ";
+        cin >> item.quantity;
+
+        cout << "Enter price: ";
+        cin >> item.price;
+
+        cart.push_back(item);
+    }
+
+    // Displaying all items in the shopping cart
+    displayCart(cart);
+
+    // Calculating and displaying the original cart total
+    cout << "\nOriginal Cart Total: Rs. "
+         << calculateTotal(cart) << endl;
+
+    // Finding and displaying the most expensive item
+    if (!cart.empty()) {
+        Item expensive = findMostExpensiveItem(cart);
+
+        cout << "\nMost Expensive Item: " << expensive.name;
+        cout << "\nUnit Price: Rs. " << expensive.price << endl;
+    }
+
+    // Applying discounts to eligible items
+    applyDiscount(cart);
+
+    // Displaying the updated cart after applying discounts
+    cout << "\nCart After Applying Discounts:";
+    displayCart(cart);
+
+    // Calculating and displaying the updated cart total
+    cout << "\nUpdated Cart Total: Rs. "
+         << calculateTotal(cart) << endl;
+
+    return 0;
+}
+
