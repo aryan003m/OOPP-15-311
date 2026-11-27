@@ -40,3 +40,11 @@ double calculateTotal(const vector<Item>& cart) {
 
     return total;
 }
+void applyDiscount(vector<Item>& cart) {
+    for (auto& item : cart) {
+        if (item.price > 1000) {
+            item.price = item.price * 0.90;
+        }
+    }
+}
+
